@@ -3,7 +3,7 @@ import papaparse from "papaparse";
 import * as fs from "fs";
 
 export async function process() {
-  const zip = new StreamZip.async({ file: "AU.zip" });
+  const zip = new StreamZip.async({ file: "au.zip" });
 
   const data = await zip.entryData("AU.txt");
 
