@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - "52 4 * * *"
 
 jobs:
   build:
