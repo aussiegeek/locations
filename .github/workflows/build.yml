@@ -31,7 +31,9 @@ jobs:
 
       - run: make
 
-      - run: au.json* data
+      - run: |
+          mkdir -p data
+          cp au.json* data
 
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
